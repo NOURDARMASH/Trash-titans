@@ -1,0 +1,13 @@
+/* Define standard variables and values for website */
+/* een test code
+
+@function text-color ($primary-color) {
+
+    @if (lightness($primary-color)>70) {
+        @return #568556;
+    }
+
+    @else {
+        @return #0b0b0b;
+    }
+} */

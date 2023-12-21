@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+%font {
+    font-family: $head-font;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+//fonts style
+
+h1 {
+    @extend %font;
+    text-align: center;
+    font-size: $h1size;
+
+}
+
+h2 {
+    @extend %font;
+    font-size: $h2size;
+}
+
+h3 {
+    @extend %font;
+    text-align: center;
+    font-size: $h2size;
+}
+
+h4 {
+    @extend %font;
+    text-align: center;
+    font-size: $h2size;
+}
+
+p {
+    text-align: center;
+    font-size: $p-font;
+}

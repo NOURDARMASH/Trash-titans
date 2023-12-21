@@ -1,0 +1,593 @@
+@import "vars";
+@import "buttons";
+@import "utilities";
+@import "nav";
+@import "karakters";
+
+body {
+    font-family: $body-font;
+    font-size: $fontsize;
+    background-image: url('Assets website/Naamloos2.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; // Zorg ervoor dat de afbeelding de hoogte volledig vult
+}
+
+%inputform {
+    border: 2px $textcolor2 solid;
+    border-bottom: 5px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.points-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+
+    img {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        padding-top: 20px;
+        color: $primary-color;
+    }
+
+    input {
+        @extend%inputform;
+        width: 400px;
+        height: 50px;
+    }
+}
+
+.points-chart {
+    @extend%inputform;
+    position: relative;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20%;
+    height: 300px;
+
+    .bar {
+        width: 20px;
+        padding-right: 5px;
+        background-color: $extra-color;
+        margin-left: 5px;
+        max-height: 280px;
+    }
+
+    .total-points {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+//result pagina 
+.a1 {
+    margin: 10px 44% 0 44%;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+//over ons pagina
+.contact {
+    padding: 10px;
+    width: 70%;
+
+    img {
+        height: 200px;
+    }
+
+    .p {
+        color: $textcolor;
+        font-size: $fontsize;
+    }
+}
+
+.maps {
+    width: 60%;
+    height: 300px;
+    border: 0;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.contanier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.contact-form {
+    padding: 10px;
+    width: 60%;
+    float: right;
+    margin-bottom: 2%;
+
+    img {
+        height: 50px;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text] {
+
+        height: 50px;
+        @extend%inputform;
+        resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    .small-input {
+        width: 40%;
+    }
+
+    .larg-input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+        height: 200px;
+        @extend%inputform;
+        resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    #but1 {
+        float: left;
+    }
+}
+
+.register-form {
+    padding: 10px;
+    width: 50%;
+    margin-top: 3%;
+    vertical-align: middle;
+    margin-right: -200px;
+
+    img {
+        height: 50px;
+        width: 150px;
+        margin-left: 25%;
+        margin-top: 20px;
+        margin-bottom: 10%;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    & input[type=text] {
+
+        height: 50px;
+        @extend%inputform;
+        margin-top: 6px;
+        resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    .small-input {
+        width: 35%;
+    }
+
+    .larg-input {
+        width: 70%;
+    }
+}
+
+.login-form {
+    padding: 10px;
+    width: 40%;
+    margin-top: 3%;
+    font-size: $fontsize;
+    font-weight: lighter;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+
+    /* Style inputs with type="text", select elements and textareas */
+    & input[type=text] {
+        width: 96%;
+        height: 50px;
+        @extend%inputform;
+        margin-top: 10px;
+        resize: vertical;
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    & input[type=checkbox] {
+        padding: 3px;
+    }
+
+    & .psw {
+        float: right;
+        margin-right: 10px;
+    }
+
+    & .wachtwoord {
+        height: 50px;
+        width: 150px;
+        float: right;
+        margin-right: 40%;
+        margin-top: 15px;
+    }
+
+}
+
+//aanpassen form
+.aanpassen-form {
+    padding: 10px;
+    width: 35%;
+    margin-bottom: 3%;
+    margin-left: 33%;
+    font-size: $fontsize;
+    display: block;
+    box-sizing: border-box;
+
+    img {
+        height: 50px;
+        margin-left: 125%;
+        margin-top: 10px;
+        width: 150px;
+    }
+
+    & input[type=text] {
+        width: 98%;
+        height: 50px;
+        @extend%inputform;
+        margin-top: 6px;
+        resize: vertical
+    }
+
+    & .small-input {
+        width: 35%;
+    }
+
+    & .larg-input {
+        width: 70%;
+    }
+
+    .form-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .form-row input {
+        margin-right: 5px;
+    }
+}
+
+//footer
+footer {
+    background-color: $primary-color;
+    padding: 2%;
+    width: 100%;
+    height: 70px;
+    display: block;
+    bottom: 0;
+    position: relative;
+    text-align: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        font-size: $fontsize;
+        color: $textcolor;
+        text-decoration: none;
+        padding: 0px 20px;
+    }
+
+}
+
+/* De popup voor de punten.html pagina */
+.popup1 {
+    border-radius: 12px;
+    border: 12px solid $primary-color;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-color: #ede4e4;
+    color: black;
+    font-family: $body-font;
+    display: none;
+
+    p {
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    .karakter2 {
+        height: 200px;
+        width: 150px;
+        float: left;
+        margin-left: 40px;
+    }
+
+    .close-button {
+        cursor: pointer;
+        background-color: red;
+        font-weight: bolder;
+        border-radius: 8px;
+        padding: 3px 10px;
+        float: right;
+        margin-right: 12px;
+        margin-top: 20px;
+        color: white;
+        font-size: $fontsize;
+
+        .close-button:hover {
+            background: #bbbbbb;
+        }
+
+        /* Add some hover effects to buttons */
+        .popup1 .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+    }
+}
+
+//home pagina
+.btn-home {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 350px;
+
+    img {
+        height: 90px
+    }
+
+}
+
+.text {
+    display: block;
+    padding: 0px 70px;
+    margin: 20px;
+}
+
+.logo2 {
+    height: 200px;
+    margin-left: 41%;
+    margin-bottom: 3%;
+    margin-top: 40px;
+}
+
+/* popup voor login pagina */
+.popup {
+    display: none;
+    border-radius: 12px;
+    border: 12px solid $primary-color;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-color: #ede4e4;
+    color: black;
+    height: auto;
+
+    input[type="text"] {
+        width: 50%;
+        height: 50px;
+        padding: 10px 40px;
+        border: 2px solid #0b0b0b;
+        border-bottom: 5px solid black;
+        border-radius: 12px;
+        box-sizing: border-box;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        resize: vertical
+    }
+
+    p {
+        padding: 10px 20px;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    .karakter2 {
+        height: 200px;
+        width: 150px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .close {
+        float: right;
+        cursor: pointer;
+        background-color: red;
+        border-radius: 8px;
+        padding: 3px 10px;
+        margin-right: 12px;
+        margin-top: 20px;
+        color: white;
+        font-size: $fontsize;
+    }
+
+    .close:hover,
+    .close:focus {
+        background: #bbbbbb;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1;
+    }
+
+}
+
+// tabel voor de voortgang pagina
+
+.result {
+    width: 60%;
+    border-radius: 14px;
+    border: 6px solid $textcolor2;
+    box-sizing: border-box;
+  // border-collapse: collapse;
+    font-family: $head-font;
+    border-bottom: 10px solid black; // border-bottom voor de zwarte kleur onder
+
+    th,
+    td {
+        padding: 8px;
+        text-align: center;
+        height: 50px;
+    }
+
+    th {
+        background-color: $primary-color;
+        color: white;
+        border-bottom: 4px solid black; //border-bottom voor de zwarte kleur onder
+    }
+
+    td {
+        color: $textcolor2;
+    }
+
+    tr:hover {
+        background-color: $extra2-color;
+    }
+
+    tr:nth-child(even) {
+        background-color: $bg-tabel;
+    }
+
+    td:nth-child(even) {
+        background: rgba($extra-color, 0.6);
+    }
+
+    /*Stel de kleur van de kolom in de helft (de middelste kolom) in op groen*/
+    td:nth-child(3) {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    /* Stel de lettertypekleur voor kolom 3 en 4 op elke regel in,
+afwisselend wit en zwart*/
+    tr:nth-child(even) td:nth-child(3) {
+        color: white;
+    }
+
+    tr:nth-child(odd) td:nth-child(3) {
+        color: black;
+    }
+
+    tr:nth-child(even) td:nth-child(4) {
+        color: black;
+    }
+
+    tr:nth-child(odd) td:nth-child(4) {
+        color: white;
+    }
+
+}
+
+//challenges
+.info {
+    display: none;
+    margin-top: -18px;
+    height: auto;
+    width: 500px;
+    padding: 25px;
+    margin-left: 10%;
+    border: #0b0b0b 2px solid;
+    border-radius: 12px;
+    border-bottom: 5px solid black;
+}
+
+
+.info p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info .btn {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.image-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    img {
+        height: 100px;
+        margin-left: 5%;
+    }
+}
+
+.image-item:hover {
+    transform: translateX(-5px);
+}
+
+.container {
+    display: flex;
+}
+
+.left-section,
+.right-section {
+    width: 30%;
+}
+
+.left-section img,
+.right-section img {
+    width: 80%;
+    height: auto;
+}
+
+.left-section {
+    margin-left: 80px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

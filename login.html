@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <a href="home.html"><img class="logo" src="Assets website/Logo's/Nav bar logo.png" /></a>
+
+        <div id="navbar">
+            <button class="btn"><a href="voortgang.html">Voortgang</a></button>
+            <button class="btn "> <a href="challenges.html">Challenges</a></button>
+            <button class="btn"><a href="contact.html">Contact</a></button>
+            <button class="btn"><a href="overons.html">Over ons</a></button>
+        </div>
+        <a href="register.html"><img class="aanmelden" src="Assets website/Home pagina/Aanmelden button.png" alt=""></a>
+    </div>
+
+    <h1>Login</h1>
+    <div class="animi-home">
+        <img class="animi1" src="Assets website/Karakter Gif Klein/Plasticina.gif" alt="">
+
+        <div class="login-form">
+            <input type="text" placeholder="E-mail" name="uname" required>
+            <br>
+            <input type="text" placeholder="Wachtwoord" name="psw" required>
+            <br>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">
+                Remember me
+            </label>
+            <span class="psw">
+                <a class="link" onclick="openPasswordPopup()">Wachtwoord vergeten?</a>
+            </span>
+            <a href=""><img class="btn-inlog" src="Assets website/Aanmeld pagina/Login button.png" alt=""></a>
+            <a href="register.html"><img class="btn-register" src="Assets website/Aanmeld pagina/Register button.png"
+                    alt=""></a>
+        </div>
+        <!-- نافذة المنبثقة -->
+        <div id="passwordPopup" class="popup">
+            <span onclick="closePasswordPopup()" class="close">&times;</span>
+            <h3>Wachtwoord resetten</h3>
+
+            <input type="text" placeholder="Enter your e-mail" name="newPassword" required>
+            <img class="karakter2" src="Assets website/Home pagina/Trash Rest.png" alt="">
+            <button class="btn" onclick="submitNewPassword()"><img
+                    src="Assets website/Contact pagina/Verstuur.png"></button>
+        </div>
+
+
+
+        <img class="animi2" src="Assets website/Karakter Gif Klein/RoestRest.gif" alt="">
+    </div>
+    <img class="logo2" src="Assets website/Logo's/TrashTitans logo.png" alt="">
+    <footer><a href="">© Het Beginstation</a></footer>
+    <script defer src="script.js"></script>
+</body>
+
+
+</html>

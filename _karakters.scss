@@ -1,0 +1,94 @@
+%animi {
+    height: 300px;
+}
+
+%karakter {
+    height: 200px;
+    width: 150px;
+}
+
+%position {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+.animi-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %position;
+
+    iframe {
+        width: 600px;
+        height: 350px;
+        @extend %position;
+    }
+
+    .animi1 {
+        @extend %animi;
+        width: 25%;
+        float: left;
+    }
+
+    .animi2 {
+        @extend %animi;
+        width: 25%;
+        float: right;
+    }
+
+    .karakter1 {
+        @extend %karakter;
+        float: left;
+    }
+
+    .karakter2 {
+        @extend %karakter;
+        float: right;
+    }
+}
+
+.animi1 {
+    @extend %animi;
+    float: left;
+
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.animi2 {
+    @extend %animi;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.karakter1 {
+    @extend %karakter;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.karakter2 {
+    @extend %karakter;
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.animi-challenges {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .animi1 {
+        width: 25%;
+        margin-left: 50px;
+    }
+
+    .animi2 {
+        width: 25%;
+        margin-right: 50px;
+    }
+}
