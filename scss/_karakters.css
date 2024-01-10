@@ -1,0 +1,68 @@
+.animi-home .animi1, .animi-home .animi2, .animi1, .animi2 {
+  height: 300px;
+  width: 25%; }
+
+.animi-home .karakter1, .animi-home .karakter2, .karakter1, .karakter2 {
+  height: 200px;
+  width: 150px; }
+
+.animi-home, .animi-home iframe {
+  margin-right: 50px;
+  margin-left: 50px; }
+
+.animi-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .animi-home iframe {
+    width: 700px;
+    height: 350px; }
+  .animi-home .animi1 {
+    width: 25%;
+    float: left; }
+  .animi-home .animi2 {
+    width: 25%;
+    float: right; }
+  .animi-home .karakter1 {
+    float: left; }
+  .animi-home .karakter2 {
+    float: right; }
+
+.animi1 {
+  float: left;
+  margin-left: 50px; }
+
+.animi2 {
+  float: right;
+  margin-right: 50px; }
+
+.karakter1 {
+  float: left;
+  margin-left: 100px;
+  margin-bottom: 100px; }
+
+.karakter2 {
+  float: right;
+  margin-right: 100px;
+  margin-bottom: 100px; }
+
+.animi-challenges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px; }
+  .animi-challenges .animi1 {
+    width: 25%;
+    margin-left: 50px; }
+  .animi-challenges .animi2 {
+    width: 25%;
+    margin-right: 50px; }

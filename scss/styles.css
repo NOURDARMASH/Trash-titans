@@ -28,7 +28,7 @@
 }
 
 h4, h3, h2, h1 {
-  font-family: Noteworthy light;
+  font-family: "Noteworthy light";
   margin-bottom: 20px;
   margin-top: 20px;
   font-weight: bold;
@@ -100,7 +100,7 @@ p {
 }
 #navbar .active,
 #navbar .btn:hover {
-  background-image: url("Assets website/Hovernavbar.png");
+  background-image: url("/Assets website/Hovernavbar.png");
   background-repeat: no-repeat;
   padding: 20px 30px;
 }
@@ -109,12 +109,13 @@ p {
   padding: 0px 18px;
   color: #e2e2eb;
   font-size: 23px;
-  font-family: Noteworthy light;
+  font-family: "Noteworthy light";
   font-weight: bold;
 }
 
 .animi2, .animi1, .animi-home .animi2, .animi-home .animi1 {
   height: 300px;
+  width: 25%;
 }
 
 .karakter2, .karakter1, .animi-home .karakter2, .animi-home .karakter1 {
@@ -133,7 +134,7 @@ p {
   align-items: center;
 }
 .animi-home iframe {
-  width: 600px;
+  width: 700px;
   height: 350px;
 }
 .animi-home .animi1 {
@@ -154,13 +155,11 @@ p {
 .animi1 {
   float: left;
   margin-left: 50px;
-  margin-bottom: 100px;
 }
 
 .animi2 {
   float: right;
   margin-right: 50px;
-  margin-bottom: 100px;
 }
 
 .karakter1 {
@@ -178,7 +177,7 @@ p {
 .animi-challenges {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .animi-challenges .animi1 {
   width: 25%;
@@ -190,13 +189,23 @@ p {
 }
 
 body {
-  font-family: HP Simplified light;
+  font-family: "HP Simplified light";
   font-size: 25px;
-  background-image: url("Assets website/Naamloos2.png");
-  height: 100vh;
+  background-image: url("/Assets website/Achtergrond afbeeldingen.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
 }
 
 .aanpassen-form input[type=text], .login-form input[type=text], .register-form input[type=text], .contact-form textarea, .contact-form input[type=text], .points-chart, .points-form input {
@@ -442,7 +451,7 @@ footer a {
   z-index: 9;
   background-color: #ede4e4;
   color: black;
-  font-family: HP Simplified light;
+  font-family: "HP Simplified light";
   display: none;
 }
 .popup1 p {
@@ -490,8 +499,10 @@ footer a {
 
 .text {
   display: block;
-  padding: 0px 70px;
-  margin: 20px;
+  height: 350px;
+  width: 700px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .logo2 {
@@ -564,7 +575,7 @@ footer a {
   border-radius: 14px;
   border: 6px solid black;
   box-sizing: border-box;
-  font-family: Noteworthy light;
+  font-family: "Noteworthy light";
   border-bottom: 10px solid black;
   /*Stel de kleur van de kolom in de helft (de middelste kolom) in op groen*/
   /* Stel de lettertypekleur voor kolom 3 en 4 op elke regel in,
