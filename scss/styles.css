@@ -113,12 +113,12 @@ p {
   font-weight: bold;
 }
 
-.animi2, .animi1, .animi-home .animi2, .animi-home .animi1 {
+.animi-right, .animi-left, .animi-home .animi-right, .animi-home .animi-left {
   height: 300px;
   width: 25%;
 }
 
-.karakter2, .karakter1, .animi-home .karakter2, .animi-home .karakter1 {
+.karakter-right, .karakter-left, .animi-home .karakter-right, .animi-home .karakter-left {
   height: 200px;
   width: 150px;
 }
@@ -137,38 +137,38 @@ p {
   width: 700px;
   height: 350px;
 }
-.animi-home .animi1 {
+.animi-home .animi-left {
   width: 25%;
   float: left;
 }
-.animi-home .animi2 {
+.animi-home .animi-right {
   width: 25%;
   float: right;
 }
-.animi-home .karakter1 {
+.animi-home .karakter-left {
   float: left;
 }
-.animi-home .karakter2 {
+.animi-home .karakter-right {
   float: right;
 }
 
-.animi1 {
+.animi-left {
   float: left;
   margin-left: 50px;
 }
 
-.animi2 {
+.animi-right {
   float: right;
   margin-right: 50px;
 }
 
-.karakter1 {
+.karakter-left {
   float: left;
   margin-left: 100px;
   margin-bottom: 100px;
 }
 
-.karakter2 {
+.karakter-right {
   float: right;
   margin-right: 100px;
   margin-bottom: 100px;
@@ -179,11 +179,11 @@ p {
   justify-content: space-between;
   margin-top: 30px;
 }
-.animi-challenges .animi1 {
+.animi-challenges .animi-left {
   width: 25%;
   margin-left: 50px;
 }
-.animi-challenges .animi2 {
+.animi-challenges .animi-right {
   width: 25%;
   margin-right: 50px;
 }
@@ -262,7 +262,7 @@ body::before {
   font-weight: bold;
 }
 
-.a1 {
+.link-1 {
   margin: 10px 44% 0 44%;
   display: block;
   position: relative;
@@ -461,7 +461,7 @@ footer a {
 .popup1 img {
   height: 50px;
 }
-.popup1 .karakter2 {
+.popup1 .karakter-left {
   height: 200px;
   width: 150px;
   float: left;

@@ -26,51 +26,51 @@
         @extend %position;
     }
 
-    .animi1 {
+    .animi-left {
         @extend %animi;
         width: 25%;
         float: left;
     }
 
-    .animi2 {
+    .animi-right {
         @extend %animi;
         width: 25%;
         float: right;
     }
 
-    .karakter1 {
+    .karakter-left {
         @extend %karakter;
         float: left;
     }
 
-    .karakter2 {
+    .karakter-right {
         @extend %karakter;
         float: right;
     }
 }
 
-.animi1 {
+.animi-left {
     @extend %animi;
     float: left;
     margin-left: 50px;
     // margin-bottom: 100px;
 }
 
-.animi2 {
+.animi-right {
     @extend %animi;
     float: right;
     margin-right: 50px;
     // margin-bottom: 100px;
 }
 
-.karakter1 {
+.karakter-left {
     @extend %karakter;
     float: left;
     margin-left: 100px;
     margin-bottom: 100px;
 }
 
-.karakter2 {
+.karakter-right {
     @extend %karakter;
     float: right;
     margin-right: 100px;
@@ -82,12 +82,12 @@
     justify-content: space-between;
     margin-top: 30px;
 
-    .animi1 {
+    .animi-left {
         width: 25%;
         margin-left: 50px;
     }
 
-    .animi2 {
+    .animi-right {
         width: 25%;
         margin-right: 50px;
     }
