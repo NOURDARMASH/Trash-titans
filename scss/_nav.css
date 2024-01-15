@@ -1,0 +1,71 @@
+.header {
+  background-color: #619E50;
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 5px solid black; }
+
+.logo {
+  height: 50px; }
+
+#navbar {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  margin-top: -35px; }
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+  background: none; }
+
+.aanmelden {
+  height: 50px;
+  margin-top: 10px; }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px; }
+  .aanmelden {
+    margin-top: 10px; }
+  .logo {
+    margin-bottom: 10px; }
+  #navbar {
+    margin-top: 10px; }
+  .btn {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center; } }

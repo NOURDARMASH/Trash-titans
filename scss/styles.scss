@@ -3,7 +3,7 @@
 @import "utilities";
 @import "nav";
 @import "karakters";
-
+@import "responsive";
 
 body {
     font-family: $body-font;
@@ -87,7 +87,7 @@ body::before {
     }
 }
 
-//result pagina 
+//result page
 .link-1 {
     margin: 10px 44% 0 44%;
     display: block;
@@ -96,7 +96,7 @@ body::before {
     color: $primary-color;
 }
 
-//over ons pagina
+//over ons page
 .contact {
     padding: 10px;
     width: 70%;
@@ -141,8 +141,8 @@ body::before {
 
         height: 50px;
         @extend%inputform;
-        resize: vertical
-            /* Allow the user to vertically resize the textarea (not horizontally) */
+        resize: vertical;
+        /* Allow the user to vertically resize the textarea (not horizontally) */
     }
 
     .small-input {
@@ -304,7 +304,7 @@ footer {
 
 }
 
-/* De popup voor de punten.html pagina */
+/* De popup for the punten.html page */
 .popup1 {
     border-radius: 12px;
     border: 12px solid $primary-color;
@@ -319,8 +319,8 @@ footer {
     display: none;
 
     p {
-        margin-right: 40px;
-        margin-bottom: 20px;
+        margin-right: 3%;
+        margin-bottom: 1%;
     }
 
     img {
@@ -328,10 +328,10 @@ footer {
     }
 
     .karakter-left {
-        height: 200px;
-        width: 150px;
+        height: auto;
+        width: 30%;
         float: left;
-        margin-left: 40px;
+        margin-left: 1%;
     }
 
     .close-button {
@@ -358,34 +358,37 @@ footer {
     }
 }
 
-//home pagina
+//home page
 .btn-home {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 350px;
+    padding: 0 10%;
 
     img {
-        height: 90px
+        height: 3.5em;
     }
 
 }
 
 .text {
     display: block;
-    height: 350px;
-    width: 700px;
-    margin-left: 50px;
-    margin-right: 50px;
+    height: auto;
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 1em;
 }
 
 .logo2 {
     height: 200px;
     margin-left: 41%;
     margin-bottom: 3%;
-    margin-top: 40px;
+    margin-top: 3%;
 }
 
-/* popup voor login pagina */
+/* popup for login page */
 .popup {
     display: none;
     border-radius: 12px;
@@ -402,14 +405,13 @@ footer {
     input[type="text"] {
         width: 50%;
         height: 50px;
-        padding: 10px 40px;
+        padding: 0px 4px;
         border: 2px solid #0b0b0b;
         border-bottom: 5px solid black;
         border-radius: 12px;
         box-sizing: border-box;
-        margin-right: 50px;
-        margin-bottom: 20px;
-        margin-top: 40px;
+        margin-right: 15%;
+        margin-bottom: 2%;
         resize: vertical
     }
 
@@ -422,10 +424,10 @@ footer {
     }
 
     .karakter2 {
-        height: 200px;
-        width: 150px;
+        height: auto;
+        width: 30%;
         float: left;
-        margin-left: 20px;
+        margin-left: 3%;
     }
 
     .close {
@@ -450,28 +452,27 @@ footer {
 
 }
 
-// tabel voor de voortgang pagina
+// tabel for the voortgang page
 
 .result {
     width: 60%;
     border-radius: 14px;
     border: 6px solid $textcolor2;
     box-sizing: border-box;
-    // border-collapse: collapse;
     font-family: $head-font;
-    border-bottom: 10px solid black; // border-bottom voor de zwarte kleur onder
+    border-bottom: 10px solid black;
 
     th,
     td {
         padding: 8px;
         text-align: center;
-        height: 50px;
+        height: 2.5em;
     }
 
     th {
         background-color: $primary-color;
         color: white;
-        border-bottom: 4px solid black; //border-bottom voor de zwarte kleur onder
+        border-bottom: 4px solid black;
     }
 
     td {
@@ -490,14 +491,14 @@ footer {
         background: rgba($extra-color, 0.6);
     }
 
-    /*Stel de kleur van de kolom in de helft (de middelste kolom) in op groen*/
+    /*Set the color of the column in half (the middle column) to green*/
     td:nth-child(3) {
         background-color: $primary-color;
         color: white;
     }
 
-    /* Stel de lettertypekleur voor kolom 3 en 4 op elke regel in,
-afwisselend wit en zwart*/
+    /* Set the font color for columns 3 and 4 on each line,
+    alternating white and black*/
     tr:nth-child(even) td:nth-child(3) {
         color: white;
     }
@@ -516,7 +517,7 @@ afwisselend wit en zwart*/
 
 }
 
-//challenges
+//challenges page
 .info {
     display: none;
     margin-top: -18px;

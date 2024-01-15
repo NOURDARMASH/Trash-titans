@@ -1,12 +1,12 @@
-.animi-home .animi.left, .animi-home .animi.right, .animi.left, .animi-right {
+.animi-home .animi-left, .animi-home .animi-right, .animi-left, .animi-right {
   height: 300px;
   width: 25%; }
 
-.animi-home .karakter.left, .animi-home .karakter.right, .karakter.left, .karakter.right {
+.animi-home .karakter-left, .animi-home .karakter-right, .karakter-left, .karakter-right {
   height: 200px;
   width: 150px; }
 
-.animi-home, .animi-home iframe {
+.animi-home, .animi-home .maps {
   margin-right: 50px;
   margin-left: 50px; }
 
@@ -20,21 +20,24 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .animi-home iframe {
+  .animi-home .maps {
     width: 700px;
     height: 350px; }
-  .animi-home .animi.left {
+  .animi-home .video {
+    width: 40%;
+    height: 300px; }
+  .animi-home .animi-left {
     width: 25%;
     float: left; }
-  .animi-home .animi.right {
+  .animi-home .animi-right {
     width: 25%;
     float: right; }
-  .animi-home .karakter.left {
+  .animi-home .karakter-left {
     float: left; }
-  .animi-home .karakter.right {
+  .animi-home .karakter-right {
     float: right; }
 
-.animi.left {
+.animi-left {
   float: left;
   margin-left: 50px; }
 
@@ -42,12 +45,12 @@
   float: right;
   margin-right: 50px; }
 
-.karakter.left {
+.karakter-left {
   float: left;
   margin-left: 100px;
   margin-bottom: 100px; }
 
-.karakter.right {
+.karakter-right {
   float: right;
   margin-right: 100px;
   margin-bottom: 100px; }
@@ -60,9 +63,9 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 30px; }
-  .animi-challenges .animi.left {
+  .animi-challenges .animi-left {
     width: 25%;
     margin-left: 50px; }
-  .animi-challenges .animi.right {
+  .animi-challenges .animi-right {
     width: 25%;
     margin-right: 50px; }

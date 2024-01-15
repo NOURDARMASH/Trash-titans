@@ -20,10 +20,15 @@
     align-items: center;
     @extend %position;
 
-    iframe {
+    .maps {
         width: 700px;
         height: 350px;
         @extend %position;
+    }
+
+    .video {
+        width: 40%;
+        height: 300px;
     }
 
     .animi-left {
@@ -53,14 +58,12 @@
     @extend %animi;
     float: left;
     margin-left: 50px;
-    // margin-bottom: 100px;
 }
 
 .animi-right {
     @extend %animi;
     float: right;
     margin-right: 50px;
-    // margin-bottom: 100px;
 }
 
 .karakter-left {

@@ -6,38 +6,38 @@ Trash titans platform
 
 Het is een platform voor jongeren voor jongeren evenals voor leraren.
 
-## Achtergrond
+## Background
 
-Gebruikers dienen zich te registreren met een account, waarmee ze kunnen deelnemen aan door scholen georganiseerde wedstrijden. Hierbij kunnen punten worden verdiend door het verzamelen van plastic en recyclebare materialen.
-Daarnaast moet het platform educatieve inhoud bevatten.
+Users must register with an account, which allows them to participate in competitions organized by schools. Points can be earned by collecting plastic and recyclable materials.
+In addition, the platform must contain educational content.
 
 ## Getting started
 
-Dit project bevat 9 HTML-bestanden, een JavaScript-bestand en een Sass-bestand, en binnen het sass-bestand zijn er subbestanden aan gekoppeld en daarin opgenomen. Aan het einde van het sass-bestand resulteert dit in een groot CSS-bestand met de reguliere CSS-codes.
+This project contains 9 HTML files, a JavaScript file, and a Sass file, and within the sass file, subfiles are linked and included within it. At the end of the sass file this results in a large CSS file with the regular CSS codes.
 
 ### navbar
 
-Om het navigatiemenu actief te maken qua het vinden van een pagina heb ik het woord (actief) toegevoegd aan het navigatiemenu en het woord (actief) is altijd aanwezig op elke html-pagina in plaats van de pagina waar het nu afhankelijk is van het navigatiemenu.
-Voor pagina's die niet in het menu staan, is er geen actieve achtergrond in het navigatiemenu
+To make the navigation menu active in terms of finding a page I added the word (active) to the navigation menu and the word (active) is always present on every html page instead of the page where it now depends on the navigation menu .
+For pages not in the menu, there is no active background in the navigation menu.
 
-### Het logo
+### The logo
 
-Het logo in de header is aanklikbaar en u kunt hiermee naar de homepagina gaan
+The logo in the header is clickable and takes you to the home page
 
-### Login pagina
+### Login page
 
-Alle buttons in de home pagina is klikbaar en om te kunnen inloggen naar je eigen account . dan kan je dat doen alleen via de button login die in de home pagina staat.
+All buttons on the home page are clickable and allow you to log in to your own account. then you can only do this via the login button on the home page.
 
 ### punten.html
 
-Deze pagina kan je naar het niet navigeren alleen als je ingelogd bent dan gaat het button voor aanmelden die staat in de header veranderen en alle paginas naar (punten invoeren) button en via deze button kan je naar punten.html pagina komen.
+You cannot navigate to this page unless you are logged in, then the button for registering in the header will change and all pages will go to the (enter points) button and via this button you can go to the points.html page.
 
-als je ingelogd bent dan moet de link voor de button punten veranderen in alle paginas naar punten.html zoals nu in punten.html staat nu.
+When you are logged in, the link for the points button in all pages must change to points.html as it is now in points.html.
 
-### Punten Registreren
+### Points Register
 
-om punten te invoeren kan je via (punten.html ) hier staat invoer veld als heb je de punten ingevoerd dan krijg jij een raam met het vraag om te bevestig daar met het klikken op de verstuur button komt het resultaat in de grafiek en als je klikt op de link onder de grafiek dan gaat jij naar voortgang pagina daar moet het gebruiker de algemeen overzicht zien voor hem en voor alle deelnemers.
+to enter points you can use (points.html) here is the input field. Once you have entered the points, you will receive a window asking you to confirm. When you click on the send button, the result will appear in the graph and if you Click on the link below the graph and you will go to the progress page, where the user should see the general overview for him and for all participants.
 
 ### Challenges
 
-alle afbeelding in de Challenges pagina is klikbaar. als je klikt gaat opennen en met terug klik gaat dicht worden
+all images in the Challenges page are clickable. if you click it will open and if you click back it will close
