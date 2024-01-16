@@ -4,7 +4,7 @@ Trash titans platform
 
 ## Trash titans
 
-Het is een platform voor jongeren voor jongeren evenals voor leraren.
+It is a platform for young people for young people as well as for teachers.
 
 ## Background
 
