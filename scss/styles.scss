@@ -33,7 +33,7 @@ body::before {
     margin-bottom: 10px;
 }
 
-
+//for punten registreren page
 .points-form {
     display: flex;
     flex-direction: column;
@@ -59,6 +59,7 @@ body::before {
     }
 }
 
+// for chart on punten registreren page
 .points-chart {
     @extend%inputform;
     position: relative;
@@ -87,7 +88,7 @@ body::before {
     }
 }
 
-//result page
+//The link is below the chart on the punten rigestreren page.
 .link-1 {
     margin: 10px 44% 0 44%;
     display: block;
@@ -166,6 +167,7 @@ body::before {
     }
 }
 
+// Registreren page
 .register-form {
     padding: 10px;
     width: 50%;
@@ -200,6 +202,7 @@ body::before {
     }
 }
 
+// login page
 .login-form {
     padding: 10px;
     width: 40%;
@@ -405,7 +408,7 @@ footer {
     input[type="text"] {
         width: 50%;
         height: 50px;
-        padding: 0px 4px;
+        padding: 0px 10px;
         border: 2px solid #0b0b0b;
         border-bottom: 5px solid black;
         border-radius: 12px;

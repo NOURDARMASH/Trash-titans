@@ -204,44 +204,37 @@ p {
     flex-direction: column;
     align-items: center;
   }
-  .logo {
+  .header .logo {
     float: none;
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  #navbar {
+  .header #navbar {
     margin-right: 5%;
     flex-direction: column;
     margin-top: 10px;
   }
-  .register {
+  .header .register {
     float: none;
     margin-top: 10px;
     margin-left: -10%;
   }
-  .contanier {
-    flex-direction: column;
-    align-items: center;
-  }
   .btn {
     padding: 10px 15px;
-  }
-  .info {
-    width: 80%;
-    margin-left: 10%;
   }
   .logo2 {
     height: auto;
     width: 25%;
   }
-  .animi-home .points-form input {
-    width: 320px;
+  .animi-home input {
+    width: 10px;
   }
   .aanpassen-form .btn img {
     margin-left: 60%;
     width: 140px;
     margin-top: 0px;
   }
+  /* Challanges page */
   .image-menu .image-item img {
     height: 75px;
     margin-left: 0%;
@@ -251,11 +244,12 @@ p {
     height: auto;
     margin-left: 8%;
   }
+  /* Contact onse page*/
   .animi-home .contanier {
     flex-direction: column;
     align-items: center;
   }
-  .contanier .contact {
+  .animi-home .contanier .contact {
     width: 100%;
     float: none;
     margin: 0;
@@ -265,21 +259,21 @@ p {
     width: 100%;
     float: none;
   }
-  .animi-home .contanier .contact-form .form-row .input[type=text] {
+  .animi-home .contanier .contact-form .input[type=text] {
     padding: 0.5em;
     height: auto;
     margin-right: 5%;
     margin-bottom: 2%;
   }
-  .contact-form .small-input {
+  .animi-home .contanier .contact-form .small-input {
     width: 40%;
     margin-bottom: 2%;
   }
-  .contact-form .larg-input {
-    width: 50%;
+  .animi-home .contanier .contact-form .larg-input {
+    width: 80%;
     margin-bottom: 2%;
   }
-  .contact-form .textarea {
+  .animi-home .contanier .contact-form .textarea {
     width: 80%;
     height: auto;
   }
@@ -296,6 +290,29 @@ p {
     text-align: center;
     font-size: 30px;
   }
+  .register-form {
+    font-size: 20px;
+    width: 25%;
+  }
+  .register-form .input[type=text] {
+    padding: 0.5em;
+    height: auto;
+    margin-right: 5%;
+    margin-bottom: 2%;
+  }
+  .register-form .small-input {
+    width: 40%;
+    margin-bottom: 2%;
+  }
+  .register-form .larg-input {
+    width: 80%;
+    margin-bottom: 2%;
+  }
+  .register-form img {
+    width: 120px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
 }
 /* Adjustments for screens smaller than 900px wide */
 @media only screen and (max-width: 900px) {
@@ -305,12 +322,12 @@ p {
     align-items: center;
     padding: 10px;
   }
-  .logo {
+  .header .logo {
     float: none;
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  #navbar {
+  .header #navbar {
     margin-right: 2%;
     flex-direction: column;
     margin-top: 10px;
@@ -319,10 +336,6 @@ p {
     float: none;
     margin: 10px auto;
     margin-top: 10px;
-  }
-  .contanier {
-    flex-direction: column;
-    align-items: center;
   }
   .btn-home {
     padding: 0 150px;
@@ -362,16 +375,17 @@ p {
     height: 65px;
     margin-left: 0%;
   }
-  .image-menu .image-item .info {
+  .image-menu .info {
     width: 89%;
     height: auto;
     margin-left: 8%;
   }
+  /*contact ons page*/
   .animi-home .contanier {
     flex-direction: column;
     align-items: center;
   }
-  .contanier .contact {
+  .animi-home .contanier .contact {
     width: 100%;
     float: none;
     margin: 0;
@@ -381,21 +395,21 @@ p {
     width: 100%;
     float: none;
   }
-  .animi-home .contanier .contact-form .form-row .input[type=text] {
+  .animi-home .contanier .contact-form .input[type=text] {
     padding: 0.5em;
     height: auto;
     margin-right: 5%;
     margin-bottom: 2%;
   }
-  .contact-form .small-input {
+  .animi-home .contanier .contact-form .small-input {
     width: 40%;
     margin-bottom: 2%;
   }
-  .contact-form .larg-input {
+  .animi-home .contanier .contact-form .larg-input {
     width: 50%;
     margin-bottom: 2%;
   }
-  .contact-form .textarea {
+  .animi-home .contanier .contact-form .textarea {
     width: 80%;
     height: auto;
   }
@@ -423,6 +437,20 @@ p {
   .register-form .a img {
     width: 120px;
   }
+  .animi-home .login-form .input [type=checkbox] {
+    font-size: 16px;
+  }
+  .animi-home .login-form .btn-login {
+    height: 2em;
+    width: 200px;
+  }
+  .animi-home .login-form .psw .link {
+    font-size: 18px;
+  }
+  .animi-home .btn-register {
+    margin-left: 25%;
+    width: 100px;
+  }
 }
 /*Adjustments for screens smaller than 600px wide*/
 @media only screen and (max-width: 600px) {
@@ -432,21 +460,21 @@ p {
     align-items: center;
     padding: 10px;
   }
-  .logo {
+  .header .logo {
     float: none;
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  .register {
+  .header .register {
     float: none;
-    margin: 10px auto;
+    margin-left: -2%;
     margin-top: 10px;
   }
   .animi-home .contanier {
     flex-direction: column;
     align-items: center;
   }
-  .contanier .contact {
+  .animi-home .contanier .contact {
     width: 100%;
     float: none;
     margin: 0;
@@ -456,30 +484,33 @@ p {
     width: 100%;
     float: none;
   }
-  .animi-home .contanier .contact-form .form-row .input[type=text] {
+  .animi-home .contanier .contact-form .input[type=text] {
     padding: 0.5em;
     height: auto;
     margin-right: 5%;
     margin-bottom: 2%;
   }
-  .contact-form .small-input {
-    width: 40%;
+  .animi-home .contanier .contact-form .small-input {
+    width: 38%;
     margin-bottom: 2%;
   }
-  .contact-form .larg-input {
-    width: 50%;
+  .animi-home .contanier .contact-form .larg-input {
+    width: 80%;
     margin-bottom: 2%;
   }
-  .contact-form .textarea {
+  .animi-home .contanier .contact-form .textarea {
     width: 80%;
     height: auto;
   }
-  .animi-home .contanier .contact-form .form .a .img {
-    height: 30px;
-    width: 80px;
+  .animi-home .contanier .contact-form img {
+    height: 45px;
+    width: 100px;
   }
-  .contact-form .img {
-    width: 150px;
+  .btn-register {
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 25%;
   }
   .animi-home .maps {
     width: 28%;
@@ -541,6 +572,16 @@ p {
     margin-bottom: 10px;
     padding-top: 1.5em;
   }
+  .animi-home .points-form input {
+    width: 250px;
+  }
+  .aanpassen-form .btn img {
+    margin-left: 0;
+    width: 100px;
+  }
+  .popup1 .btn img {
+    height: 2em;
+  }
   .btn-home img {
     height: 50px;
   }
@@ -557,6 +598,9 @@ p {
     height: auto;
     width: 120px;
     margin-right: 0;
+  }
+  .animi-home .text {
+    margin-top: 1%;
   }
   .animi-challenges {
     display: flex;
@@ -577,30 +621,27 @@ p {
     overflow-x: auto;
     width: 40%;
   }
-  .animi-home .result .td {
+  .animi-home th.td {
     padding: 0.2em;
     text-align: center;
     height: 6px;
   }
-  .btn-home .img {
-    height: 2em;
+  .btn-home img {
+    height: 80px;
   }
-  .animi-home .login-form {
-    margin-top: 1%;
-  }
-  .animi-home .login-form .label .input [type=checkbox] {
+  .animi-home .login-form .input [type=checkbox] {
     font-size: 16px;
-  }
-  .animi-home .login-form .psw .link {
-    font-size: 18px;
-  }
-  .animi-home .login-form .btn-register {
-    margin-left: 25%;
-    width: 100px;
   }
   .animi-home .login-form .btn-login {
     height: 2em;
     width: 200px;
+  }
+  .animi-home .login-form .psw .link {
+    font-size: 18px;
+  }
+  .animi-home .btn-register {
+    margin-left: 25%;
+    width: 100px;
   }
   .animi-home .register-form {
     margin-top: 0;
@@ -613,16 +654,6 @@ p {
   }
   .animi-home .register-form .form-row {
     font-size: 14px;
-  }
-  .animi-home .points-form input {
-    width: 250px;
-  }
-  .aanpassen-form .btn img {
-    margin-left: 0;
-    width: 100px;
-  }
-  .popup1 .btn img {
-    height: 2em;
   }
   .popup .btn img {
     height: 2em;
@@ -973,7 +1004,7 @@ footer a {
 .popup input[type=text] {
   width: 50%;
   height: 50px;
-  padding: 0px 4px;
+  padding: 0px 10px;
   border: 2px solid #0b0b0b;
   border-bottom: 5px solid black;
   border-radius: 12px;
