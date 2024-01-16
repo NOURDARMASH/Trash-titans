@@ -29,6 +29,7 @@
           }
       }
 
+      //code for All platform
       .btn {
           padding: 10px 15px;
       }
@@ -38,12 +39,21 @@
           width: 25%;
       }
 
+      h1,
+      h2,
+      h3,
+      h4 {
+          text-align: center;
+          font-size: 30px;
+      }
+
       .animi-home {
           input {
               width: 10px;
           }
       }
 
+      //The form in the Persoonlijke page
       .aanpassen-form {
           .btn img {
               margin-left: 60%;
@@ -60,7 +70,7 @@
           }
 
           .image-item .info {
-              width: 89%;
+              width: 77%;
               height: auto;
               margin-left: 8%;
           }
@@ -107,23 +117,36 @@
               }
 
           }
+
       }
 
-      .animi-home .maps {
-          width: 40%;
-          height: 350px;
-          margin-left: 1%;
-          margin-right: 1%;
+      //buttons in login form
+      .animi-home {
+          .login-form {
+              .btn-register {
+                  margin-left: 30%;
+                  width: 125px;
+              }
+
+              .btn-login {
+                  height: 2em;
+                  width: 98%;
+              }
+          }
       }
 
-      h1,
-      h2,
-      h3,
-      h4 {
-          text-align: center;
-          font-size: 30px;
+      //the map in contact page
+      .animi-home {
+          .maps {
+              width: 40%;
+              height: 350px;
+              margin-left: 1%;
+              margin-right: 1%;
+          }
       }
 
+
+      //the form in rigestreren page
       .register-form {
           font-size: 20px;
           width: 25%;
@@ -145,7 +168,7 @@
               margin-bottom: 2%;
           }
 
-          img {
+          .img {
               width: 120px;
               margin-left: 20%;
               margin-top: 10px;
@@ -174,14 +197,15 @@
               flex-direction: column;
               margin-top: 10px;
           }
+
+          .register {
+              float: none;
+              margin: 10px auto;
+              margin-top: 10px;
+          }
       }
 
-      .register {
-          float: none;
-          margin: 10px auto;
-          margin-top: 10px;
-      }
-
+      //code for All platform
       .btn-home {
           padding: 0 150px;
       }
@@ -201,23 +225,52 @@
           width: 25%;
       }
 
+      h1,
+      h2,
+      h3,
+      h4 {
+          text-align: center;
+          font-size: 28px;
+      }
+
+      .animi-home {
+          .animi-right {
+              height: 250px;
+              margin-right: 3%;
+          }
+
+          .animi-left {
+              height: 250px;
+              margin-left: 3%;
+          }
+      }
+
+      .psw .link {
+          font-size: 18px;
+      }
+
+      //input punten in Persoonlijke page
       .animi-home .points-form input {
           width: 300px;
       }
 
-      .animi-home .login-form .btn-register {
-          margin-left: 25%;
-          width: 120px;
-      }
+      //buttons in login form
+      .animi-home {
+          .login-form {
+              .btn-register {
+                  margin-left: 25%;
+                  width: 120px;
+              }
 
-      .animi-home .login-form .btn-login {
-          height: 2.1em;
-          width: 200px;
-      }
+              .btn-login {
+                  height: 2em;
+                  width: 200px;
+              }
 
-      .animi-home .login-form .btn-login {
-          height: 2em;
-          width: 200px;
+              .input [type=checkbox] {
+                  font-size: 16px;
+              }
+          }
       }
 
       .aanpassen-form .btn img {
@@ -225,9 +278,9 @@
           width: 120px;
       }
 
+      //for challanges page
       .image-menu {
           .image-item img {
-              //  width: 100%;
               height: 65px;
               margin-left: 0%;
 
@@ -280,6 +333,35 @@
           }
       }
 
+      //the form in rigestreren page
+      .register-form {
+          font-size: 16px;
+          width: 25%;
+
+          .input {
+              padding: 0.5em;
+              height: auto;
+              margin-right: 5%;
+              margin-bottom: 2%;
+          }
+
+          .small-input {
+              width: 40%;
+              margin-bottom: 2%;
+          }
+
+          .larg-input {
+              width: 80%;
+              margin-bottom: 2%;
+          }
+
+          img {
+              width: 120px;
+              margin-left: 20%;
+              margin-top: 10px;
+          }
+      }
+
       .animi-home .maps {
           width: 33%;
           height: 300px;
@@ -287,54 +369,8 @@
           margin-right: 1%;
       }
 
-      h1,
-      h2,
-      h3,
-      h4 {
-          text-align: center;
-          font-size: 28px;
-      }
-
-      .animi-home {
-          .animi-right {
-              height: 250px;
-              margin-right: 3%;
-          }
-
-          .animi-left {
-              height: 250px;
-              margin-left: 3%;
-          }
-      }
-
-      .register-form .a img {
-          width: 120px;
-      }
-
-      .animi-home {
-          .login-form {
-              .input [type=checkbox] {
-                  //width:30%;
-                  font-size: 16px;
-              }
-
-              .btn-login {
-                  height: 2em;
-                  width: 200px;
-              }
-
-              .psw .link {
-                  font-size: 18px;
-              }
-          }
-
-          .btn-register {
-              margin-left: 25%;
-              width: 100px;
-          }
-
-      }
   }
+
 
   /*Adjustments for screens smaller than 600px wide*/
   @media only screen and (max-width: 600px) {
@@ -359,6 +395,7 @@
           }
       }
 
+      /*contact ons page*/
       .animi-home {
           .contanier {
               flex-direction: column;
@@ -422,6 +459,7 @@
           margin-right: 1%;
       }
 
+      //code for All platform
       .animi-left {
           height: auto;
           width: 120px;
@@ -456,58 +494,9 @@
           font-size: 14px;
       }
 
-      .register img {
-          width: 100%;
-          height: 1.5em;
-      }
-
-      .image-menu {
-          .image-item img {
-              height: 50px;
-              margin-left: 0%;
-
-          }
-
-          .image-item .info {
-              width: 89%;
-              height: auto;
-              margin-left: 1%;
-          }
-      }
-
       .logo2 {
           height: auto;
           width: 25%;
-      }
-
-      ////for punten registreren page
-      .points-form {
-          img {
-              height: 30px;
-              margin-top: 10px;
-          }
-
-          label {
-              margin-bottom: 10px;
-              padding-top: 1.5em;
-          }
-      }
-        .animi-home .points-form input {
-          width: 250px;
-      }
-
-      .aanpassen-form .btn img {
-          margin-left: 0;
-          width: 100px;
-      }
-
-      .popup1 .btn img {
-          height: 2em;
-      }
-
-      // over ons page
-      .btn-home img {
-          height: 50px;
       }
 
       .animi-home {
@@ -549,71 +538,122 @@
               margin-left: 0;
           }
       }
-//for voortgang page
+
+      .register img {
+          width: 100%;
+          height: 1.5em;
+      }
+
+      //for challanges page
+      .image-menu {
+          .image-item img {
+              height: 50px;
+              margin-left: 0%;
+          }
+
+          .image-item .info {
+              width: 89%;
+              height: auto;
+              margin-left: 1%;
+          }
+      }
+
+
+      ////for punten registreren page
+      .points-form {
+          img {
+              height: 30px;
+              margin-top: 10px;
+          }
+
+          label {
+              margin-bottom: 10px;
+              padding-top: 1.5em;
+          }
+      }
+
+      //for personlijk page
+      .animi-home .points-form input {
+          width: 250px;
+      }
+
+      .aanpassen-form .btn img {
+          margin-left: 0;
+          width: 100px;
+      }
+
+      .popup1 .btn img {
+          height: 2em;
+      }
+
+      // over ons page
+      .btn-home img {
+          height: 50px;
+      }
+
+
+      //for voortgang page
       .animi-home {
           .result {
               overflow-x: auto;
               width: 40%;
 
-          }
-
-          th.td {
-              padding: 0.2em;
-              text-align: center;
-              height: 6px;
-          }
-
-      }
-
-
-
-      .btn-home img {
-          height: 80px;
-      }
-
-      .animi-home {
-          .login-form {
-              .input [type=checkbox] {
-                  //width:30%;
-                  font-size: 16px;
-              }
-
-              .btn-login {
-                  height: 2em;
-                  width: 200px;
-              }
-
-              .psw .link {
-                  font-size: 18px;
+              th.td {
+                  padding: 0.2em;
+                  text-align: center;
+                  height: 6px;
               }
           }
 
-          .btn-register {
-              margin-left: 25%;
-              width: 100px;
+          .btn-home img {
+              height: 80px;
           }
 
-      }
+          //for login page
+          .animi-home {
+              .login-form {
+                  .input [type=checkbox] {
+                      font-size: 16px;
+                  }
 
-      .animi-home .register-form {
-          margin-top: 0;
-          margin-right: -100px;
-      }
+                  .btn-login {
+                      height: 2em;
+                      width: 200px;
+                  }
 
-      .animi-home .register-form img {
-          width: 80px;
-          margin-left: 12%;
-          margin-top: 3%;
-      }
+                  .psw .link {
+                      font-size: 18px;
+                  }
+              }
 
-      .animi-home .register-form .form-row {
-          font-size: 14px;
-      }
+              .btn-register {
+                  margin-left: 25%;
+                  width: 100px;
+              }
 
+          }
 
-    
+          // for rigesteren page
+          .animi-home {
+              .register-form {
+                  margin-top: 0;
+                  margin-right: -100px;
 
-      .popup .btn img {
-          height: 2em;
+                  img {
+                      width: 80px;
+                      margin-left: 12%;
+                      margin-top: 3%;
+                  }
+
+                  .form-row {
+                      font-size: 14px;
+                  }
+              }
+          }
+
+          //popup for wachtwoord
+          .popup .btn img {
+              height: 2em;
+          }
       }
   }
