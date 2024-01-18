@@ -1,4 +1,4 @@
-//punten invoeren
+//enter points
 var totalPointsElement;
 var currentPoints = 0;
 
@@ -38,7 +38,7 @@ function submitPoints() {
   document.getElementById("myForm").style.display = "none";
 }
 
-//code voor popup in de punten.html pagina
+//code for popup in the punten.html page
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -48,7 +48,7 @@ function closeButton() {
 }
 
 
-///Popup wachtwoord vergeten voor de login pagina 
+///Popup wachtwoord vergeten for the login page 
 
 function openPasswordPopup() {
   document.getElementById('passwordPopup').style.display = 'block';
@@ -62,7 +62,7 @@ function submitNewPassword() {
   closePasswordPopup();
 }
 
-//codes voor de challanges pagina
+//codes for the challanges page
 
 function toggleInfo(infoId) {
   var infoElement = document.getElementById(infoId);
